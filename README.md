@@ -19,8 +19,6 @@ If the average_slope is >= 4%, the default speed (18km/h) is multiplied by 0.90 
 If the average_slope is <= -4%, the default speed (18km/h) is multiplied by 1.10 <br>
 <br>
 How I created this: <br>
-So I used graphhopper, QGIS, a QGIS plugin (catchment), and a way to query the openstreetmaps (OSM) API, which was called Overpass turbo. I also somewhat followed this guide which was very useful. https://gispocoding.github.io/how_to_create_isochrones/<br>
-<br>
 I ran graphhopper, which is a routing software, on my mac laptop. The graphhopper github page is https://github.com/graphhopper/graphhopper so in a folder named graphhopper I ran:
 git clone https://github.com/graphhopper/graphhopper<br>
 <br>
