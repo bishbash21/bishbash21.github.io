@@ -39,4 +39,4 @@ Then go export and download geojson, and import that into QGIS<br>
 Then to start the graphhopper server I ran:<br>
 java -Ddw.graphhopper.datareader.file=australia-latest.osm.pbf -jar graphhopper*.jar server config-example.yml<br>
 Which creates a server at localhost:8989<br>
-Then in the catchment plugin in QGIS I selected the layer with the station entrances and in settings i changed the graphhopper url to http://localhost:8989 where the server is. <br>
+Then in the catchment plugin in QGIS I selected the layer with the station entrances and in settings I changed the graphhopper url to http://localhost:8989 where the server is. <br>
