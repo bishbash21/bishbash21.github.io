@@ -1,4 +1,6 @@
 # A map of locations where you can walk or bike to a Heavy or Light Rail station in Sydney
+Access the webmap here: https://bishbash21.github.io <br>
+<br>
 Tools used: qgis2web, QGIS v34, graphhopper v10.2, OpenStreetMaps, and Overpass Turbo.<br>
 This guide was very helpful https://gispocoding.github.io/how_to_create_isochrones/<br>
 Uses CGIAR elevation data. <br>
