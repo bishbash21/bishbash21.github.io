@@ -1,12 +1,11 @@
 # A map of locations where you can walk or bike to a Heavy or Light Rail station in Sydney
 Access the webmap here: https://bishbash21.github.io <br>
 <br>
-Tools used: qgis2web, QGIS v34, graphhopper v10.2, OpenStreetMaps, and Overpass Turbo.<br>
+Tools used: QGIS v34, graphhopper v10.2, OpenStreetMaps, Overpass Turbo, and python.<br>
 This guide was very helpful https://gispocoding.github.io/how_to_create_isochrones/<br>
-Uses CGIAR elevation data. <br>
-Walking and biking speed = 5 & 18km/h respectively on flat areas. <br> 
-Elevation affects speeds. <br>
-
+<br>
+The parameters used can be found in config_example.yml<br>
+<br>
 For walking: <br>
 If the average_slope is >= 15%, the speed is limited to 1.5 km/h <br>
 If the average_slope is >=  7% the speed is limited to 2.5 km/h <br>
@@ -20,23 +19,22 @@ If the average_slope is >= 8%, the default speed (18km/h) is multiplied by 0.80 
 If the average_slope is >= 4%, the default speed (18km/h) is multiplied by 0.90 <br>
 If the average_slope is <= -4%, the default speed (18km/h) is multiplied by 1.10 <br>
 <br>
-How I created this: <br>
-I ran graphhopper, which is a routing software, on my mac laptop. The graphhopper github page is https://github.com/graphhopper/graphhopper so in a folder named graphhopper I ran:
-git clone https://github.com/graphhopper/graphhopper<br>
+How to create a similar map: <br>
+Install QGIS. <br>
+Install graphhopper https://github.com/graphhopper/graphhopper. <br>
 <br>
-Then I downloaded the jar file from https://github.com/graphhopper/graphhopper/releases/download/10.2/graphhopper-web-10.2.jar and placed it in the base of the graphhopper folder.<br>
-Then I got the file with all the actual road and street data from https://download.geofabrik.de/australia-oceania/american-oceania-latest.osm.pbf and stuck that in the base of the graphhopper folder. <br>
+To get map data for Australia, download this file https://download.geofabrik.de/australia-oceania/american-oceania-latest.osm.pbf. <br>
 <br>
-I then edited the config_example.yml file to suit my needs, heres a copy of it https://drive.google.com/file/d/1HFj8a8L94V8g8o-HzuECARcMBSzduaHv/view?usp=drive_link<br>
-I installed QGIS-LTR, and then I installed a plugin in QGIS called Catchment which actually generates the isochrones.<br>
-I selected the Openstreetmaps base layer in QGIS under xyz tiles on the browser on the left.<br>
+I edited the config_example.yml file to enable elevation data and adjust routing paramaters, and a copy of that file can be found in this github repository. <br>
+I used the Openstreetmaps base layer in QGIS under xyz tiles in the browser. <br>
 <br>
-To get all the points where the train stations, light rail stations, and manly ferry terminals I used Overpass turbo https://overpass-turbo.eu/index.html<br>
-When using the ({{bbox}}) term, overpass turbo only returns results within what your window is showing, so make sure you can see the whole sydney trains network in your window. The query I used to get all heavy rail stations, and light rail stations is in this file here
-https://drive.google.com/file/d/1E-mIFFvw_ax90WHIxVvn3iw1mVz2pC4r/view?usp=drive_link<br>
-Then go export and download geojson, and import that into QGIS<br>
+To find the points of which to generate the isochrones from, I used overpass turbo. When using the ({{bbox}}) term, overpass turbo only returns results within what your window is showing, so make sure you can see the whole sydney trains network in your window. The queries I used to return heavy & light rail platform entrances, and Manly -> Circular Quay ferry wharves is in the overpass_turbo_queries.txt in this repository. <br>
 <br>
-Then to start the graphhopper server I ran:<br>
-java -Ddw.graphhopper.datareader.file=australia-latest.osm.pbf -jar graphhopper*.jar server config-example.yml<br>
-Which creates a server at localhost:8989<br>
-Then in the catchment plugin in QGIS I selected the layer with the station entrances and in settings I changed the graphhopper url to http://localhost:8989 where the server is. <br>
+Once overpass turbo returns a result, export it as a .geojson file. <br>
+<br>
+Once you have the points, and graphhopper is running locally on port 8989 (it uses 8989 by default), use the isochrone_generator.py script like so: <br>
+```python3 isochrone_generator.py profile input_points.geojson output_isochrones.geojson```. <br>
+I recommend creating a python virtual environment and installing the dependencies required to avoid dependency conflicts. <br>
+A virtual environment can be created by the command ```python3 -m venv name_of_virtual_env``` and it can be activate by browsing into the ./name_of_virtual_env/bin folder and running ```source activate```. <br> 
+Run ```pip install requests shapely```. <br>
+Import the output_isochrone.geojson file into QGIS and the isochrones will appear. 
