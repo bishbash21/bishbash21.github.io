@@ -1,0 +1,88 @@
+The overpass query to find the entrances to the platforms on the Sydney Trains and Metro Trains Sydney operated heavy rail network, and Sydney light rail network is:
+
+(
+  (
+    way["railway"="platform"]["tram"!="yes"]["disused:railway"!="platform"]["network"!="NSW TrainLink"]({{bbox}});
+    node(w);
+  );
+  (
+    rel["railway"="platform"]["tram"!="yes"]["disused:railway"!="platform"]["network"!="NSW TrainLink"]({{bbox}});
+    way(r);
+    node(w);
+  );
+)->.platform_nodes;
+(
+    way["highway"="steps"]({{bbox}})(bn.platform_nodes);
+    way["highway"="elevator"]({{bbox}})(bn.platform_nodes);
+    way["highway"="footway"]({{bbox}})(bn.platform_nodes);
+    way["highway"="pedestrian"]({{bbox}})(bn.platform_nodes);
+    way["highway"="path"]({{bbox}})(bn.platform_nodes);
+    way["foot"]({{bbox}})(bn.platform_nodes);
+);
+node(w)->.walkway_nodes;
+node.platform_nodes.walkway_nodes;
+out geom;
+
+
+The overpass query to find the entrances to the platforms on the Sydney Trains and Metro Trains Sydney operated heavy rail network is:
+
+(
+ (
+    way["railway"="platform"]["light_rail"!="yes"]["tram"!="yes"]["disused:railway"!="platform"]["network"!="NSW TrainLink"]({{bbox}});
+    node(w);
+  );
+  (
+    rel["railway"="platform"]["light_rail"!="yes"]["tram"!="yes"]["disused:railway"!="platform"]["network"!="NSW TrainLink"]({{bbox}});
+    way(r);
+    node(w);
+  );
+)->.platform_nodes;
+(
+    way["highway"="steps"]({{bbox}})(bn.platform_nodes);
+    way["highway"="elevator"]({{bbox}})(bn.platform_nodes);
+    way["highway"="footway"]({{bbox}})(bn.platform_nodes);
+    way["highway"="pedestrian"]({{bbox}})(bn.platform_nodes);
+    way["highway"="path"]({{bbox}})(bn.platform_nodes);
+    way["foot"]({{bbox}})(bn.platform_nodes);
+);
+node(w)->.walkway_nodes;
+node.platform_nodes.walkway_nodes;
+out geom;
+
+The overpass query to find the entrances to the platforms on the Sydney light rail network is:
+
+(  
+  (  
+    way["railway"="platform"]["light_rail"="yes"]({{bbox}});  
+    node(w);  
+  );  
+  (  
+    rel["railway"="platform"]["light_rail"="yes"]({{bbox}});  
+    way(r);  
+    node(w);  
+  );  
+)->.platform_nodes;  
+(  
+    way["highway"="steps"]({{bbox}})(bn.platform_nodes);  
+    way["highway"="elevator"]({{bbox}})(bn.platform_nodes);  
+    way["highway"="footway"]({{bbox}})(bn.platform_nodes);  
+    way["highway"="pedestrian"]({{bbox}})(bn.platform_nodes);  
+    way["highway"="path"]({{bbox}})(bn.platform_nodes);  
+    way["foot"]({{bbox}})(bn.platform_nodes);  
+);  
+node(w)->.walkway_nodes;  
+node.platform_nodes.walkway_nodes;  
+out geom;
+
+The overpass query I used to return the latitudes and longitudes of the wharves used by ferries which travel between Circula Quay and Manly.
+(
+node["name"="Circular Quay 3B"]({{bbox}});
+node["name"="Circular Quay 3A"]({{bbox}});
+node["name"="Circular Quay 2A"]({{bbox}});
+node["name"="Circular Quay 2B"]({{bbox}});
+node["name"="Circular Quay 6A"]({{bbox}});
+node["name"="Manly Fast Ferry terminal (Circular Quay)"]({{bbox}});
+node["name"="Manly Wharf"]({{bbox}});
+node["name"="Manly Wharf 3"]({{bbox}});
+  );
+out geom;
