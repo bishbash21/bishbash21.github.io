@@ -21,14 +21,14 @@ If the average_slope is <= -4%, the default speed (18km/h) is multiplied by 1.10
 <br>
 How to create a similar map: <br>
 Install QGIS. <br>
-Install graphhopper https://github.com/graphhopper/graphhopper. <br>
+Install graphhopper by running ```git clone https://github.com/graphhopper/graphhopper``` and downloading the latest .jar file which is found in releases on the github repositry. <br>
 <br>
 To get map data for Australia, download this file https://download.geofabrik.de/australia-oceania/american-oceania-latest.osm.pbf. <br>
 <br>
 I edited the config_example.yml file to enable elevation data and adjust routing paramaters, and a copy of that file can be found in this github repository. <br>
 I used the Openstreetmaps base layer in QGIS under xyz tiles in the browser. <br>
 <br>
-To find the points of which to generate the isochrones from, I used overpass turbo. When using the ({{bbox}}) term, overpass turbo only returns results within what your window is showing, so make sure you can see the whole sydney trains network in your window. The queries I used to return heavy & light rail platform entrances, and Manly -> Circular Quay ferry wharves is in the overpass_turbo_queries.txt in this repository. <br>
+To find the points of which to generate the isochrones from, I used overpass turbo. When using the ({{bbox}}) term, overpass turbo only returns results within what your window is showing. The queries I used to return heavy & light rail platform entrances, and Manly -> Circular Quay ferry wharves is in the overpass_turbo_queries.txt in this repository. <br>
 <br>
 Once overpass turbo returns a result, export it as a .geojson file. <br>
 <br>
