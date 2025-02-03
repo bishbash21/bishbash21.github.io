@@ -1,17 +1,17 @@
-# A map of areas where you can walk or bike within 10 minutes to heavy & light rail stations, ferry wharves, and bus stops in Sydney
+# A map of areas where you can walk or bike within 10 minutes to heavy & light rail stations, ferry wharves, and bus stops in Sydney #
 **Access the map here: https://bishbash21.github.io**<br>
 <br>
 ## Public transport stops used:<br>
-### Heavy Rail:<br>
+### Heavy Rail:<br> ###
 The heavy rail stations used are the stations on the Sydney Trains suburban network and Sydney Metro network. Sydney Trains suburban stations extend from Waterfall in the South, Berowa in the North, Emu Plains in the West, and Macarthur in the South West.  <br>
 <br>
-### Light Rail:<br>
+### Light Rail:<br> ###
 The light rail stations used include all stops on the L1, L2, L3, and L4.<br>
 <br>
-### Ferries:<br>
+### Ferries:<br> ###
 The only ferry route frequent enough (10 minutes service frequency) to be included in this map was the Manly -> Circular Quay ferry.<br>
 <br>
-### Buses:<br>
+### Buses:<br> ###
 All Bus Routes used are part of the All Day Frequent Network (ADFN), which is a network of buses with 10 minute service frequencies or better during the day, 7 days a week. <br>
 If there are any other bus services which are part of the ADFN and meet the criteria above, let me know.
 The bus routes which fullfill these requirements, and were subsequently included in this map are: <br>
@@ -49,7 +49,7 @@ Inner West:<br>
 * 442: Balmain East Wharf -> City QVB<br>
 * 526: Strathfield -> Rhodes<br>
 <br>
-## Graphhopper parameters:<br>
+## Graphhopper parameters:<br> ##
 The exact server parameters used can be found in config_example.yml<br>
 <br>
 For walking: <br>
@@ -71,7 +71,7 @@ If the average_slope is >= 3%, the speed is limited to 18 km/h <br>
 If the average_slope is >= 0%, the speed is limited to 20 km/h <br>
 If the average_slope is <= -3%, the speed is limited to 24 km/h <br>
 <br>
-## How to create a similar map: <br>
+## How to create a similar map: <br> ##
 <br>
 Tools used: QGIS v34, graphhopper v10.2, OpenStreetMaps, Overpass Turbo, and python.<br>
 This guide was very helpful https://gispocoding.github.io/how_to_create_isochrones/<br>
