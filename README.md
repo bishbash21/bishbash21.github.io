@@ -17,41 +17,41 @@ If there are any other bus services which are part of the ADFN and meet the crit
 The bus routes which fullfill these requirements, and were subsequently included in this map are: <br>
 <br>
 Northern Beaches:<br>
-*B1: Mona Vale -> City Wynyard<br>
-*100: Taronga Zoo -> City QVB<br>
-*144: Manly -> Chatswood<br>
-*160X: Dee Why -> Chatswood<br>
-*199: Palm Beach -> Manly<br>
+* B1: Mona Vale -> City Wynyard<br>
+* 100: Taronga Zoo -> City QVB<br>
+* 144: Manly -> Chatswood<br>
+* 160X: Dee Why -> Chatswood<br>
+* 199: Palm Beach -> Manly<br>
 <br>
 Eastern & South Eastern:<br>
 <br>
-*304: Zetland -> City Circular Quay<br>
-*309: Matraville -> Redfern via Botany Road<br>
-*333: North Bondi -> City Circular Quay<br>
-*343: Kingsford -> City Circular Quay<br>
-*350: Domestic Terminal -> Bondi Jn<br>
-*370: Glebe Point -> Coogee<br>
-*373: Coogee -> City Museum<br>
-*379: Bronte -> North Bondi<br>
-*390X: La Perouse -> Bondi Junction<br>
-*392: Matraville -> Redfern via Bunnerong Road<br>
-*396: Maroubra Beach -> City Circular Quay<br>
+* 304: Zetland -> City Circular Quay<br>
+* 309: Matraville -> Redfern via Botany Road<br>
+* 333: North Bondi -> City Circular Quay<br>
+* 343: Kingsford -> City Circular Quay<br>
+* 350: Domestic Terminal -> Bondi Jn<br>
+* 370: Glebe Point -> Coogee<br>
+* 373: Coogee -> City Museum<br>
+* 379: Bronte -> North Bondi<br>
+* 390X: La Perouse -> Bondi Junction<br>
+* 392: Matraville -> Redfern via Bunnerong Road<br>
+* 396: Maroubra Beach -> City Circular Quay<br>
 <br>
 North West:<br>
 <br>
-*120: Chatswood -> City QVB<br>
-*500x: West Ryde -> City Hyde Park<br>
+* 120: Chatswood -> City QVB<br>
+* 500x: West Ryde -> City Hyde Park<br>
 <br>
 The Hills District:<br>
 <br>
-*610X: Castle Hill -> City QVB<br>
+* 610X: Castle Hill -> City QVB<br>
 <br>
 Inner West:<br>
 <br>
-*438X: Abbotsford -> City Martin Place<br>
-*433: Balmain Gladstone Park -> Central<br>
-*442: Balmain East Wharf -> City QVB<br>
-*526: Strathfield -> Rhodes<br>
+* 438X: Abbotsford -> City Martin Place<br>
+* 433: Balmain Gladstone Park -> Central<br>
+* 442: Balmain East Wharf -> City QVB<br>
+* 526: Strathfield -> Rhodes<br>
 <br>
 ## Graphhopper parameters:<br>
 The exact server parameters used can be found in config_example.yml<br>
