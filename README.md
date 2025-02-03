@@ -24,7 +24,6 @@ Northern Beaches:<br>
 * 199: Palm Beach -> Manly<br>
 <br>
 Eastern & South Eastern:<br>
-<br>
 * 304: Zetland -> City Circular Quay<br>
 * 309: Matraville -> Redfern via Botany Road<br>
 * 333: North Bondi -> City Circular Quay<br>
@@ -38,16 +37,13 @@ Eastern & South Eastern:<br>
 * 396: Maroubra Beach -> City Circular Quay<br>
 <br>
 North West:<br>
-<br>
 * 120: Chatswood -> City QVB<br>
 * 500x: West Ryde -> City Hyde Park<br>
 <br>
 The Hills District:<br>
-<br>
 * 610X: Castle Hill -> City QVB<br>
 <br>
 Inner West:<br>
-<br>
 * 438X: Abbotsford -> City Martin Place<br>
 * 433: Balmain Gladstone Park -> Central<br>
 * 442: Balmain East Wharf -> City QVB<br>
