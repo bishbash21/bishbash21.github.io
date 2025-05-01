@@ -86,9 +86,9 @@ Once overpass turbo returns a result, export it as a .geojson file. <br>
 <br>
 Once you have the points, and graphhopper is running locally on port 8989 (it uses 8989 by default), I recommend creating a python virtual environment and installing the dependencies required to avoid dependency conflicts. <br>
 A virtual environment can be created by the command python3 -m venv name_of_virtual_env and it can be activate by browsing into the ./name_of_virtual_env/bin folder and running source activate. <br> 
-Run ```pip install requests shapely```. <br>
+Run pip install requests shapely. <br>
 <br>
 Then you can run the isochrone_generator.py script like so: <br>
-```python isochrone_generator.py profile input_points.geojson output_isochrones.geojson```. <br>
+python isochrone_generator.py profile input_points.geojson output_isochrones.geojson. <br>
 <br>
 Import the output_isochrone.geojson file into QGIS and the isochrones will appear. 
