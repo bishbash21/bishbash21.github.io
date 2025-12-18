@@ -10,42 +10,7 @@ The light rail stations used include all stops on the L1, L2, L3, and L4.<br>
 The only ferry route frequent enough (10 minutes service frequency) to be included in this map was the Manly -> Circular Quay ferry.<br>
 ### Buses:<br> 
 All Bus Routes used are part of the All Day Frequent Network (ADFN), which is a network of buses with 10 minute service frequencies or better during the day, 7 days a week. <br>
-If there are any other bus services which are part of the ADFN and meet the criteria above, let me know.
-The bus routes which fullfill these requirements, and were subsequently included in this map are: <br>
-<br>
-Northern Beaches:<br>
-B1: Mona Vale -> City Wynyard<br>
-100: Taronga Zoo -> City QVB<br>
-144: Manly -> Chatswood<br>
-160X: Dee Why -> Chatswood<br>
-199: Palm Beach -> Manly<br>
-<br>
-Eastern & South Eastern:<br>
-304: Zetland -> City Circular Quay<br>
-309: Matraville -> Redfern via Botany Road<br>
-333: North Bondi -> City Circular Quay<br>
-343: Kingsford -> City Circular Quay<br>
-350: Domestic Terminal -> Bondi Jn<br>
-370: Glebe Point -> Coogee<br>
-373: Coogee -> City Museum<br>
-379: Bronte -> North Bondi<br>
-390X: La Perouse -> Bondi Junction<br>
-392: Matraville -> Redfern via Bunnerong Road<br>
-396: Maroubra Beach -> City Circular Quay<br>
-<br>
-North West:<br>
-120: Chatswood -> City QVB<br>
-500x: West Ryde -> City Hyde Park<br>
-<br>
-The Hills District:<br>
-610X: Castle Hill -> City QVB<br>
-<br>
-Inner West:<br>
-438X: Abbotsford -> City Martin Place<br>
-433: Balmain Gladstone Park -> Central<br>
-442: Balmain East Wharf -> City QVB<br>
-526: Strathfield -> Rhodes<br>
-<br>
+The ADFN bus routes can be found here https://transportnsw.info/document/8045/Sydney-All-Day-Frequent-Network.pdf <br>
 ## Graphhopper parameters:<br> 
 The exact server parameters used can be found in config_example.yml<br>
 <br>
