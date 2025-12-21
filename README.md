@@ -1,4 +1,4 @@
-# A map of areas where you can walk or bike within 10 minutes to heavy & light rail stations, ferry wharves, and bus stops in Sydney #
+# A map of areas where you can walk or bike within 10 minutes to train & light rail stations, and bus stops in Sydney #
 **Access the map here: https://bishbash21.github.io**<br>
 <br>
 ## Public transport stops used:<br>
@@ -6,8 +6,6 @@
 The heavy rail stations used are the stations on the Sydney Trains suburban network and Sydney Metro network. Sydney Trains suburban stations extend from Waterfall in the South, Berowa in the North, Emu Plains in the West, and Macarthur in the South West.  <br>
 ### Light Rail:<br> 
 The light rail stations used include all stops on the L1, L2, L3, and L4.<br>
-### Ferries:<br> 
-The only ferry route frequent enough (10 minutes service frequency) to be included in this map was the Manly -> Circular Quay ferry.<br>
 ### Buses:<br> 
 All Bus Routes used are part of the All Day Frequent Network (ADFN), which is a network of buses with 10 minute service frequencies or better during the day, 7 days a week. <br>
 The ADFN bus routes can be found here https://transportnsw.info/document/8045/Sydney-All-Day-Frequent-Network.pdf <br>
